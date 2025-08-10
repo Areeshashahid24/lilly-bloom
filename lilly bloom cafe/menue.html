@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LILLY BLOOM CAFE SECION</title>
+    <style>
+ .image-box img {
+        max-width: 100%;
+        height: auto;
+A
+    }
+ hr.custom-hr {
+            width: 35%;
+            height: 1px;
+            background-color: black;
+            border: none;
+            margin-bottom: 30px;
+        }
+    
+        nav {
+            background-color: rgb(41, 12, 12);
+  
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+nav ul li {
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.cart {
+      border: 3px solid;
+      padding: 10px;
+      width:400px;
+      height: 500px;
+      bottom: 0;
+      left: 50%;
+      display: inline-block;
+      vertical-align: top;
+      overflow-y: auto;
+      
+      
+    }
+     body, h1, h2, p {
+        background-image: url('https://i.pinimg.com/236x/79/7b/57/797b571b4f1631fd6e28428cb37dd1d9.jpg');
+            background-attachment: fixed;
+            background-position: center; 
+            color: #1c0000;
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+        }
+
+       
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        /* Style each image box */
+        .image-box {
+            text-align: center;
+            margin: 0 20px;
+            margin-bottom: 30px;
+        }
+
+        /* Style the images */
+        .image-box img {
+            height: 500px;
+            width: 400px;
+            display: block;
+            padding: 4px;
+            border: 4px inset;
+            transition: transform 0.3s ease-in-out; 
+        }
+
+        /* Hover effect on images */
+        .image-box img:hover {
+            transform: scale(1.1); 
+        }
+
+        .image-text {
+            margin-top: 20px;
+            max-width: 150px;
+            color: black;
+        }
+      button{
+        background-color: black;
+           color: #fff;
+           border-radius: 5%;
+
+      }
+ 
+
+
+    </style>
+</head>
+<body>
+    <nav><ul><li><h1 style="color: BLACK;">PLACE YOUR ORDER</h1></li></ul></nav>
+    
+    <center><img src="https://i.pinimg.com/236x/fd/52/32/fd52328ee19d37d7420c9c2e491f5431.jpg" height=200px width=200px </center>
+    <h1><i>LillyBloomCafe </i></h1><BR>
+     <P><I><h3>Eat Love and Die</h3></I></P>
+     <hr class="custom-hr">
+
+    
+    
+    <h2><i>COFFEE SECTION</i></h2>
+    
+    <div class=".image-box img:hover">
+    <div class="image-container">
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/38/4e/60/384e6075849ba6118d07f523a75814ca.jpg">
+           
+            <p class="image-text"><B><u><i>ICED LATTE RS 800</i></u></B></p>
+            <button onclick="addToCart('ICED LATTE', 800)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/f5/59/b6/f559b67aea57e05dba4c3ccc3a1ac39e.jpg" >
+            
+            <p class="image-text"><u><i><B>ICED AMERICANO RS 450</B></i></u></p>
+            <button onclick="addToCart('ICED AMERICANO', 4500)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/01/6a/33/016a3372283916a4e84a41a7dd80f1f5.jpg" alt="Image 3" height="300">
+            
+            <p class="image-text"><i><u><b>LAVENDER LATTE RS 550</b></u></i></p><button onclick="addToCart('LAVENDER LATTE', 800)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/c8/1c/18/c81c18929c60347909b49ee4165e0729.jpg" alt="Image 4" height="300">
+            
+            <p class="image-text"><u><i><B>ICED CARAMEL MACCHIATO RS 850</B></i></u></p><button onclick="addToCart('ICED CARAMEL MACCHIATO ', 850)">Add to cart</button>
+        </div>
+    </div>
+</div>
+    <div class="image-container">
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/2e/e8/12/2ee8124cf986d29f499202fac499698f.jpg" alt="Image 1">
+            
+            <p class="image-text"><B><u><i>ICED DALGONA RS 800</i></u></B></p><button onclick="addToCart('ICED DALGONA', 800)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/a5/8d/52/a58d52e58145b1e6f1be20b1447c7c24.jpg" alt="Image 2" height="300">
+            
+            <p class="image-text"><u><i><B>TURKISH COFFE RS 450</B></i></u></p><button onclick="addToCart('TURKISH COFFE', 450)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/14/5d/d5/145dd5ee93df3618d3d6929b49ad7334.jpg" alt="Image 3" height="300">
+           
+            <p class="image-text"><i><u><b>CASHEW GINGERSNAP LATTE RS 550</b></u></i></p><button onclick="addToCart('CASHEW GINGERSNAP LATTE', 550)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/f8/ad/b1/f8adb1dffd0c001f8627afc9c2d043d3.jpg" alt="Image 4" height="300">
+            
+            <p class="image-text"><u><i><B>WHIPPED WHITE RUSSIAN LATTE RS 850</B></i></u></p><button onclick="addToCart('WHIPPED WHITE RUSSIAN LATTE', 850)">Add to cart</button>
+        </div>
+    </div>
+    <div class="image-container">
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/3c/be/f0/3cbef028196641e3a3974397574b6262.jpg" alt="Image 1" height="300">
+           
+            <p class="image-text"><B><u><i>ORANGE CHOCALATE ESPRESSO RS 800</i></u></B></p><button onclick="addToCart('ORANGE CHOCALATE ESPRESSO', 800)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/43/2f/dd/432fddbf1bc2fcf8c62729fe5eb7254b.jpg" alt="Image 2" height="300">
+           
+            <p class="image-text"><u><i><B>BUNGLOW CLASSIC RS 550</B></i></u></p><button onclick="addToCart('BUNGLOW CLASSIC ', 550)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/86/34/17/8634170c7a031cb78cdf90062aff6420.jpg" alt="Image 3" height="300">
+            
+            <p class="image-text"><i><u><b>ICED BROWN SUGAR LATTE RS 750</b></u></i></p><button onclick="addToCart('ICED BROWN SUGAR LATTE', 750)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/17/83/17/178317ed5f80ca0214cba560747ec774.jpg" alt="Image 4" height="300">
+            
+            <p class="image-text"><u><i><B>TOASTED COCONUT MOCHA RS 850</B></i></u></p><button onclick="addToCart('TOASTED COCONUT MOCHA ', 850)">Add to cart</button>
+        </div>
+    </div>
+    <div class="image-container">
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/e2/44/88/e244888649416c76bf88880e1b126798.jpg" alt="Image 1" height="300">
+           
+            <p class="image-text"><B><u><i>PUMMKIN SPICED ESPRESSO MARTINI RS 900</i></u></B></p><button onclick="addToCart('PUMMKIN SPICED ESPRESSO MARTINI', 900)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/03/8e/b7/038eb776dccd74382b39154f8498eba5.jpg" alt="Image 2" height="300">
+           
+            <p class="image-text"><u><i><B>ESPRESSO TONIC RS 450</B></i></u></p><button onclick="addToCart('ESPRESSO TONIC', 450)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/35/38/34/3538343a57c6029a15ecd7914129b08b.jpg" alt="Image 3" height="300">
+            
+            <p class="image-text"><i><u><b>COFFE LATTE  CUP RS 550</b></u></i></p><button onclick="addToCart('COFFE LATTE  CUP', 550)" >Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/e3/83/f9/e383f9aba12fcabbffd116323690fb57.jpg" alt="Image 4" height="300">
+          
+            <p class="image-text"><u><i><B>COFFE LATTE  CUP RS 550</B></i></u></p><button onclick="addToCart('COFFE LATTE  CUP', 550)">Add to cart</button>
+        </div>
+    </div>
+    
+    <!-- Separate Sections -->
+    
+    <hr class="custom-hr">
+    
+    <h4><i>BAKERY SECTION</i></h4>
+    
+    <div class="image-container">
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/4f/33/20/4f3320d3684a6af8d54a10d851bfadec.jpg" alt="Image 1" height="300">
+            
+            <p class="image-text"><B><u><i>CLASSIC CROISSANT RS 800</i></u></B></p><button onclick="addToCart('CLASSIC CROISSANT', 800)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/32/ea/62/32ea624c38bd9f17247b0dc37164fe8d.jpg" alt="Image 2" height="300">
+            
+            <p class="image-text"><u><i><B>CREAM FILLED CROISSANT RS 950</B></i></u></p>
+            <button onclick="addToCart('CREAM FILLED CROISSANT', 950)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/aa/54/23/aa542366aa4ce8b383986bc1983458fa.jpg" height="300">
+            
+            <p class="image-text"><i><u><b>CHOCOLATE MUFFINS RS 550</b></u></i></p><button onclick="addToCart('CHOCOLATE MUFFINS', 550)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/54/48/7a/54487a89c04c8de82de40925083bea91.jpg" alt="Image 4" height="300">
+           
+            <p class="image-text"><u><i><B>CINNAMON ROLLS RS 850</B></i></u></p><button onclick="addToCart('CINNAMON ROLLS', 850)" >Add to cart</button>
+        </div>
+    </div>
+    <div class="image-container">
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/f7/fa/25/f7fa25ee0b234a7f757d2ac741b2d340.jpg" alt="Image 1" height="300">
+            
+            <p class="image-text"><B><u><i>ESPRESSO CINAMON BUNS RS 800</i></u></B></p><button onclick="addToCart('ESPRESSO CINAMON BUNS', 800)" >Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/0a/45/8f/0a458fe256b4781fb9fc4f2ea627fe0d.jpg" alt="Image 2" height="300">
+            
+            <p class="image-text"><u><i><B>SALTED ESPRESSO COOKIES RS 350</B></i></u></p><button onclick="addToCart('SALTED ESPRESSO COOKIES', 350)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/0f/de/f0/0fdef070873f03dde1f278c347a938f9.jpg" height="300"onclick="addToCart('VANILA FRENCH TOAST', 550)">
+            
+            <p class="image-text"><i><u><b>VANILA FRENCH TOAST RS 550</b></u></i></p><button onclick="addToCart('VANILA FRENCH TOAST', 550)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/6b/71/e7/6b71e767f047396ef90fdbe5bc9f6675.jpg" alt="Image 4" height="300"onclick="addToCart('MIXED BERRY TART ', 750)">
+            
+            <p class="image-text"><u><i><B>MIXED BERRY TART RS 750</B></i></u></p><button onclick="addToCart('MIXED BERRY TART ', 750)">Add to cart</button>
+        </div>
+    </div><div class="image-container">
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/05/9f/2f/059f2f570464889d15e46b6c7d6545cb.jpg" alt="Image 1" height="300"onclick="addToCart('CHERRY CHEESECAKE',2200)">
+            
+            <p class="image-text"><B><u><i>CHERRY CHEESECAKE RS 2200</i></u></B></p><button onclick="addToCart('CHERRY CHEESECAKE',2200)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/66/93/b9/6693b9711050bd13eb36519c32fa2312.jpg" alt="Image 2" height="300"onclick="addToCart('TEA CAKES', 1150)">
+            
+            <p class="image-text"><u><i><B>TEA CAKES RS 1150</B></i></u></p><button onclick="addToCart('TEA CAKES', 1150)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/7d/2a/c6/7d2ac670fbc061aa2986bbbe077cfc67.jpg" height="300"onclick="addToCart('CHOCOLATE BROWNIE', 550)">
+           
+            <p class="image-text"><i><u><b>CHOCOLATE BROWNIE RS 550</b></u></i></p><button onclick="addToCart('CHOCOLATE BROWNIE', 550)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/d3/ec/6b/d3ec6b085ad8a1874b6505b030683f83.jpg" alt="Image 4" height="300"onclick="addToCart('BLACKBERRY CUPCAKES', 800)">
+           
+            <p class="image-text"><u><i><B>BLACKBERRY CUPCAKES RS 850</B></i></u></p><button onclick="addToCart('BLACKBERRY CUPCAKES', 800)">Add to cart</button>
+        </div>
+    </div><div class="image-container">
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/5a/69/c4/5a69c44c9715d729d742907b09623912.jpg" alt="Image 1" height="300"onclick="addToCart('CHOCOLATE CROISSANT', 800)">
+            
+            <p class="image-text"><B><u><i>CHOCOLATE CROISSANT RS 800</i></u></B></p><button onclick="addToCart('CHOCOLATE CROISSANT', 800)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/ed/fa/c1/edfac1fafc2b36f2fea4db6a88fd21fe.jpg" alt="Image 2" height="300"onclick="addToCart('CUPCAKES', 550)">
+            
+            <p class="image-text"><u><i><B>CUP CAKES RS 550</B></i></u></p><button onclick="addToCart('CUPCAKES', 550)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/f8/f2/57/f8f2574dde021df40b8cf2c333518731.jpg" height="300"onclick="addToCart('MIXED FRUIT TART', 550)">
+            
+            <p class="image-text"><i><u><b>MIXED FRUIT TART RS 550</b></u></i></p><button onclick=('MIXED FRUIT TART', 550)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/65/b4/51/65b451d7baf3347da5eb64d5a9f135c5.jpg" alt="Image 4" height="300"onclick="addToCart('WALNUT DOUGHNUTS', 450)">
+            
+            <p class="image-text"><u><i><B>WALNUT DOUGHNUTS RS 450</B></i></u></p><button onclick="addToCart('WALNUT DOUGHNUTS', 450)">Add to cart</button>
+        </div>
+    </div><div class="image-container">
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/97/83/53/978353ad85ba7ef8646e0bd55617dbec.jpg" alt="Image 1" width="200"onclick="addToCart('STRAWBERRY JAM FILLED COOKIES', 500)">
+           
+            <p class="image-text"><B><u><i>STRAWBERRY JAM FILLED COOKIES RS 500</i></u></B></p><button onclick="addToCart('STRAWBERRY JAM FILLED COOKIES', 500)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/95/ac/74/95ac748c09da47164dc225570423ff9e.jpg" alt="Image 2" height="300"onclick="addToCart('PUMPKIN SWISS ROLL', 950)">
+            
+            <p class="image-text"><u><i><B>PUMMKIN SWISS ROLLS RS 950</B></i></u></p><button onclick="addToCart('PUMPKIN SWISS ROLL', 950)">add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/b8/f0/37/b8f037f219fa58f48cfeb139e96bb92d.jpg" height="300"onclick="addToCart('LEMON TART', 550)">
+            
+            <p class="image-text"><i><u><b>LEMON TART RS 550</b></u></i></p><button onclick="addToCart('LEMON TART', 550)">Add to cart</button>
+        </div>
+        <div class="image-box">
+            <img src="https://i.pinimg.com/236x/3d/62/ae/3d62aec1e0e933297ae3685b2d122080.jpg" alt="Image 4" height="300"onclick="addToCart('CAKEROLL', 450)">
+            
+            <p class="image-text"><u><i><B>STRAWBERRY CAKEROLLS RS 450</B></i></u></p>
+            <button onclick="addToCart('STRAWBERRYCAKEROLLS','450')">add to cart</button>
+        </div>
+    </div>
+<br>
+<hr class="custom-hr">
+<BR><BR>
+    <p><i><u>"WE CAN CUSTOMIZE CAKES, CUPCAKES AND COOKIES FOR DIFFERET EVENTS PLACE YOUR ORDER 5 DAYS BEFORE YOUR EVENT"</u></i></p><br><br><br><br>
+    <div class="cart" id="mycart"><h1>My CART</h1></div>
+    <div class="cart" id="mybill"><h1>MY BILL</h1></div>
+<centre> <button onclick="print()">confirm order</button>
+    <button onclick="removeFromCart(0)">Remove Item</button>
+</centre>
+<script>
+    
+let cart = []; 
+
+function addToCart(itemName, price) {
+  
+  const item = {
+    name: itemName,
+    price: price,
+  };
+
+  cart.push(item);
+  displayCart();
+  displayBill();
+}
+
+function calculateBill() {
+  let total = 0;
+  for (const item of cart) {
+    total += item.price;
+  }
+  return total;
+}
+
+function displayCart() {
+  const cartDiv = document.getElementById('mycart');
+  if (cart.length === 0) {
+    cartDiv.innerHTML = 'Cart is empty';
+  } else {
+    let cartItems = '<ul>'; 
+    for (const item of cart) {
+      cartItems += `<li>${item.name} - $${item.price}</li>`;
+    }
+    cartItems += '</ul>';
+    cartDiv.innerHTML = cartItems;
+  }
+}
+
+function displayBill() {
+  const billDiv = document.getElementById('mybill');
+  const totalBill = calculateBill();
+  billDiv.innerHTML = `<p>Total Bill: $${totalBill}</p>`;
+}
+function removeFromCart(index) {
+  if (index >= 0 && index < cart.length) {
+    cart.splice(index, 1);
+    displayCart(); 
+    displayBill(); 
+  } else {
+    console.log("Invalid index");
+  }
+}
+function print(){
+        alert(" your order is confirmed the rider will contact you within 30 mins");
+    }
+
+</script>
+  
+</body>
+</html>

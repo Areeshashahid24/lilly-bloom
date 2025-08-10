@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LILLY BLOOM FLORAL SECTION</title>
+</head>
+
+
+
+<style>
+    .cart {
+      border: 3px solid;
+      padding: 10px;
+      width:400px;
+      height: 500px;
+      bottom: 0;
+      left: 50%;
+      display: inline-block;
+      vertical-align: top;
+      overflow-y: auto;
+      
+      
+    }
+    
+    body, h1, h2, p {
+        background-image: url('https://i.pinimg.com/236x/bc/b1/ab/bcb1ab9906603a8e40a43d77dcd914dc.jpg');
+        background-attachment: fixed;
+            background-position: center; 
+        
+            color: #ff /* Addffff; /* Text color */
+            font-family: Arial,
+            margin: 0;
+            padding: 0;
+        }
+
+       
+        hr.custom-hr {
+            width: 35%;
+            height: 1px;
+            background-color: black;
+            border: none;
+            margin-bottom: 30px;
+        }
+
+        .picture-container {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .picture {
+            display: inline-block;
+            text-align: center;
+            margin-left: 5%;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+
+        .picture img {
+            height: 500px;
+            width: 400px;
+            display: block;
+            padding: 4px;
+            border: 4px inset;
+            transition: transform 0.3s ease-in-out; 
+            transition: transform 0.3s ease-in-out; /* Adding a transition */
+        }
+
+        /* Adding hover effect to images */
+        .picture img:hover {
+            transform: scale(1.1);
+
+    .description {
+        text-align: center;
+        margin-top: 3%;
+        max-width: 200px;
+       
+    }
+    button{
+        background-color: black;
+           color: #fff;
+           border-radius: 5%;
+
+      }
+</style>
+</head>
+    <body>
+        
+        
+        <div> <center>
+         <img src="https://i.pinimg.com/236x/2b/9e/57/2b9e57ea3514a11d788bbdf1f1f600c8.jpg" height="300">
+        </center>
+     </div> 
+     <center>
+         <h1 style="color: rgb(167, 30, 126);"><i>"Choose what makes your heart bloom"</i></h1>
+     </center>
+     <hr class="custom-hr">
+     <center> <p><i> "Say it with flowers - find the perfect bouquet for every occasion at our floral shop."we offer various range of flower boquets </i></p></center><br><br>
+     <center><h1 style="font-size: large;"> <i>ROSES</i></h1><br>
+     </center>
+
+
+<div class="picture-container">
+    <div class="picture">
+        <img src="https://i.pinimg.com/564x/19/d5/f4/19d5f4f6f45cb0354eb7a1dada695be6.jpg" alt="Image 5"  height="300">
+        <p class="description"><i>Angelina   RS 7,000</i></p>
+        <button onclick="addToCart('Angelina','7000')">Add to cart</button>
+        
+    </div>
+    <div class="picture">
+        <img src="https://i.pinimg.com/564x/e4/6b/66/e46b6699e89979429cc9b6ccf6a426d9.jpg" alt="Image 2" height="300">
+        <p class="description"><i>Soap Flower Bouquet [Pink Rose]   RS 2,500</i></p>
+        <button onclick="addToCart('Soap Flower Bouquet pink rose','2500')">Add to cart</button>
+    </div>
+    <div class="picture">
+       
+        <img src="https://i.pinimg.com/564x/da/db/58/dadb585f1c021994711c8c1d97592860.jpg" alt="Image 3" height="300">
+        <p class="description"><i> baby pink rose boquete with baby breaths  RS 3,500</p>
+            <button onclick="addToCart('baby pink rose bouquete with baby breaths','3500')">Add to cart</button>
+    </div>
+    <div class="picture">
+        <img src="https://i.pinimg.com/564x/16/de/37/16de372c9503a921f1c9112aab2db640.jpg" alt="Image 4"    height="300">
+        <p class="description"><i>blush pink princess boquet    RS1,800</i></p>
+        <button onclick="addToCart('blish pink princess bouquet','1800')">Add to cart</button>
+    </div>
+</div>
+
+<div class="picture-container">
+    <div class="picture">
+        <img src="https://i.pinimg.com/564x/ea/c6/e3/eac6e39bb3ddc0c6d4cff2cdfcb94e25.jpg" alt="Image 1" height="300">
+        <p class="description"><i>Bloom Box is made of the soft color 
+            and light green stems of eucalyptus.RS1,500</i></p> 
+            <button onclick="addToCart('boquet of eucalyptus','7000')">Add to cart</button>
+    </div>
+    <div class="picture">
+        <img src="https://i.pinimg.com/564x/38/8d/15/388d1507f069433172a70481de83753d.jpg" alt="Image 6"  height="300">
+        <p class="description"><i>Valentino   RS 5,000</i></p>
+        <button onclick="addToCart('Valentino','5000')">Add to cart</button>
+    </div>
+    <div class="picture">
+        <img src="https://i.pinimg.com/564x/e9/05/d3/e905d3258b4ec3e13a87c573f8957551.jpg" alt="Image 7" height="300">
+        <p class="description"><I>Saranghae  RS 4,000</I></p>
+        <button onclick="addToCart('Sarangae','4000')">Add to cart</button>
+    </div>
+    <div class="picture">
+        <img src="https://i.pinimg.com/564x/6c/dd/8a/6cdd8a7c9487ff8626c87a3b3e8a8e01.jpg" alt="Image 8" height="300">
+        <p class="description"><i>Solhee  RS 4,500</i></p>
+        <button onclick="addToCart('solhee','4500')">Add to cart</button>
+    </div>
+</div>   
+<br><br><br>
+<center><h1 style="font-size: large;"> <i>TULIPS</i></h1><br>  
+    <style>
+ 
+        button{
+        background-color: black;
+           color: #fff;
+           border-radius: 5%;
+
+      }
+ 
+    </style>
+   
+    <div class="picture-container">
+        <div class="picture">
+            <img src="https://i.pinimg.com/564x/ab/10/7b/ab107b669f6ad301ae591a071b05d0f8.jpg" alt="Image 5"  height="300">
+            <p class="description"><i>Peach cream   RS 2,000</i></p>
+            <button onclick="addToCart('peach cream','2000')">Add to cart</button>
+            
+        </div>
+        <div class="picture">
+            <img src="https://i.pinimg.com/564x/45/81/48/458148a1380d7a1a603b0d8b3220c1da.jpg" alt="Image 2" height="300">
+            <p class="description"><i>Maria   RS 2,500</i></p>
+            <button onclick="addToCart('Maria','2500')">Add to cart</button>
+        </div>
+        <div class="picture">
+           
+            <img src="https://i.pinimg.com/564x/c4/c5/02/c4c5020c1cf18bd51583b76f97d5fbe6.jpg" alt="Image 3" height="300">
+            <p class="description"><i>Leena Sakura  RS 3,500</p>
+                <button onclick="addToCart('Leena Sakura','3500')">Add to cart</button>
+        </div>
+        <div class="picture">
+            <img src="https://i.pinimg.com/564x/3d/34/01/3d34015b82e1862e265ef1802f016768.jpg" alt="Image 4"    height="300">
+            <p class="description"><i>Marideath   RS 5,000</i></p>
+            <button onclick="addToCart('Marideath','5000')">Add to cart</button>
+        </div>
+    </div>
+    
+    
+    <div class="picture-container">
+        <div class="picture">
+            <img src="https://i.pinimg.com/564x/47/18/4d/47184d3141ef2e8bc07dfbe09bb53044.jpg" alt="Image 1" height="300">
+            <p class="description"><i> Enchanto  RS5,000</i></p>
+            <button onclick="addToCart('Enchanto','5000')">Add to cart</button> 
+        </div>
+        <div class="picture">
+            <img src="https://i.pinimg.com/564x/be/7a/60/be7a60cac1533b6365913e62944c7771.jpg" alt="Image 6"  height="300">
+            <p class="description"><i>Aroya   RS 5,000</i></p>
+            <button onclick="addToCart('Aroya','5000')">Add to cart</button>
+        </div>
+        <div class="picture">
+            <img src="https://i.pinimg.com/564x/e6/24/ef/e624ef722b09858905e4712706c322c5.jpg" alt="Image 7" height="300">
+            <p class="description"><I>Baledona RS 4,000</I></p>
+            <button onclick="addToCart('Baledona','4000')">Add to cart</button>
+        </div>
+        <div class="picture">
+            <img src="https://i.pinimg.com/564x/4d/de/58/4dde589c74baae278ce1a07a593cce1a.jpg" alt="Image 8" height="300">
+            <p class="description"><i>Limjukyun  RS 4,500</i></p>
+            <button onclick="addToCart('Limjukun','4500')">Add to cart</button>
+        </div>
+    </div>
+    
+</div>   
+<br><br><br>
+<center><h1 style="font-size: larger;"> <i>lilly</i></h1><br>  
+
+    <div class="picture-container">
+        <div class="picture">
+            <img src="https://i.pinimg.com/564x/32/e5/b9/32e5b915136533a4acb23cf77771d785.jpg" alt="Image 5"  height="300">
+            <p class="description"><i>White beauty   RS 4,000</i></p>
+            <button onclick="addToCart('White beauty','4000')">Add to cart</button>
+            
+        </div>
+        <div class="picture">
+            <img src="https://i.pinimg.com/236x/cb/a1/81/cba181d48a198f8a5ad96ed2f39cc52f.jpg" alt="Image 2" height="300">
+            <p class="description"><i>Kyla   RS 4,500</i></p>
+            <button onclick="addToCart('Kyla','4500')">Add to cart</button>
+        </div>
+        <div class="picture">
+           
+            <img src="https://i.pinimg.com/236x/09/7e/24/097e24c8c0e703eed67af05499c58874.jpg" alt="Image 3" height="300">
+            <p class="description"><i>Leserefem  RS 5,500</p>
+                <button onclick="addToCart('Leserefem','5500')">Add to cart</button>
+        </div>
+        <div class="picture">
+            <img src="https://i.pinimg.com/236x/de/02/35/de0235256581daf066c68b8a93a5a037.jpg" alt="Image 4"    height="300">
+            <p class="description"><i>Guwel   RS 5,000</i></p>
+            <button onclick="addToCart('Guwel','5000')">Add to cart</button>
+        </div>
+    </div>
+    
+    <!-- Second Line of Pictures -->
+    <div class="picture-container">
+        <div class="picture">
+            <img src="https://i.pinimg.com/564x/07/a3/4f/07a34f049a218ca7f7cd709c4c80bcc3.jpg" alt="Image 1" height="300">
+            <p class="description"><i> Aurum   Rs 4,500</i></p> 
+            <button onclick="addToCart('Aurum','4500')">Add to cart</button>
+        </div>
+        <div class="picture">
+            <img src="https://i.pinimg.com/236x/d9/84/26/d984263e71dadcb39658375cc91b22a8.jpg" alt="Image 6"  height="300">
+            <p class="description"><i>ArORA  RS 5,000</i></p>
+            <button onclick="addToCart('ArORA','5000')">Add to cart</button>
+        </div>
+        <div class="picture">
+            <img src="https://i.pinimg.com/236x/54/7a/c1/547ac173b0564cbe8f31dbe7323f5027.jpg" alt="Image 7" height="300">
+            <p class="description"><I>Cilly RS 4,000</I></p>
+            <button onclick="addToCart('Cilly','4000')">Add to cart</button>
+        </div>
+        <div class="picture">
+            <img src="https://i.pinimg.com/564x/a7/11/fd/a711fdda2f8fbec09a689c836f75eba3.jpg" alt="Image 8" height="300">
+            <p class="description"><i>Waliera  RS 4,500</i></p>
+            <button onclick="addToCart('Waliera','4500')">Add to cart</button>
+        </div>
+    </div>  
+
+    <center><h1 style="font-size: larger;"> <i>Sun Flower</i></h1><br>  
+
+        <div class="picture-container">
+            <div class="picture">
+                <img src="https://i.pinimg.com/236x/ca/23/44/ca2344b8b903fb26f947818b062a7cd7.jpg" alt="Image 5"  height="300">
+                <p class="description"><i>   RS 4,000</i></p>
+                <button onclick="addToCart('sunflower boquet','4000')">Add to cart</button>
+                
+            </div>
+            <div class="picture">
+                <img src="https://i.pinimg.com/236x/7c/2a/44/7c2a440ed0d17d25f9b029d692838fe8.jpg" alt="Image 2" height="300">
+                <p class="description"><i>   RS 4,500</i></p>
+                <button onclick="addToCart('sunflower boquet','4500')">Add to cart</button>
+            </div>
+            <div class="picture">
+               
+                <img src="https://i.pinimg.com/564x/d1/ed/ae/d1edae7208fc1d45d25e04a9a5c46bfd.jpg" alt="Image 3" height="300">
+                <p class="description"><i> RS 5,500</p>
+            </div>
+            <button onclick="addToCart('sunflower boquet','5500')">Add to cart</button>
+            <div class="picture">
+                <img src="https://i.pinimg.com/236x/82/04/d1/8204d1e44516ae747120da8e5cecf7a2.jpg" alt="Image 4"    height="300">
+                <p class="description"><i>  RS 5,000</i></p>
+                <button onclick="addToCart('sunflower boquet','5000')">Add to cart</button>
+            </div>
+        </div>
+        
+        <!-- Second Line of Pictures -->
+        <div class="picture-container">
+            <div class="picture">
+                <img src="https://i.pinimg.com/236x/39/98/31/39983194d533a6a48673626cab204c91.jpg" alt="Image 1" height="300">
+                <p class="description"><i>   Rs 4,500</i></p> 
+                <button onclick="addToCart('sunflower boquet','4500')">Add to cart</button>
+            </div>
+            <div class="picture">
+                <img src="https://i.pinimg.com/236x/ca/23/44/ca2344b8b903fb26f947818b062a7cd7.jpg" alt="Image 6"  height="300">
+                <p class="description"><i>  RS 5,000</i></p>
+                <button onclick="addToCart('sunflower boquet','5000')">Add to cart</button>
+            </div>
+            <div class="picture">
+                <img src="https://i.pinimg.com/236x/fc/bb/42/fcbb426cd0bedb345cbc036eff3e0089.jpg" alt="Image 7" height="300">
+                <p class="description"><I> RS 4,000</I></p>
+                <button onclick="addToCart('sunflower boquet','4000')">Add to cart</button>
+            </div>
+            <div class="picture">
+                <img src="https://i.pinimg.com/236x/8b/31/b9/8b31b94111091e909c74ee6ea97b9854.jpg" alt="Image 8" height="300">
+                <p class="description"><i>Waliera  RS 4,500</i></p>
+                <button onclick="addToCart('Waliera', '4500')">Add to cart</button>
+            </div>
+        </div>  
+
+        <center><h1 style="font-size: larger;"> <i>Hybrid boquet</i></h1><br>  
+   
+
+            <div class="picture-container">
+                <div class="picture">
+                    <img src="https://i.pinimg.com/236x/60/ab/a9/60aba9025d00b8aa425cd21d1b07379b.jpg" alt="Image 5"  height="300">
+                    <p class="description"><i>   RS 7,000</i></p>
+                    <button onclick="addToCart('hybrid', '7000')">Add to cart</button>
+                    
+                </div>
+                <div class="picture">
+                    <img src="https://i.pinimg.com/236x/cd/3e/fb/cd3efb1d16b3f634b4980284da19c957.jpg" alt="Image 2" height="300">
+                    <p class="description"><i>   RS 5,500</i></p>
+                    <button onclick="addToCart('hybrid', '5500')">Add to cart</button>
+                </div>
+                <div class="picture">
+                   
+                    <img src="https://i.pinimg.com/236x/5d/38/90/5d3890b166bf66ae1113082921556a8d.jpg" alt="Image 3" height="300">
+                    <p class="description"><i> RS 3,500</p>
+                        <button onclick="addToCart('hybrid', '3500')">Add to cart</button>
+                </div>
+                <div class="picture">
+                    <img src="https://i.pinimg.com/236x/72/cf/d5/72cfd5cd8caf2b03d142e4b530253b5a.jpg" alt="Image 4"    height="300">
+                    <p class="description"><i>  RS 4,000</i></p>
+                    <button onclick="addToCart('hybrid', '4000')">Add to cart</button>
+                </div>
+            </div>
+            
+            <!-- Second Line of Pictures -->
+            <div class="picture-container">
+                <div class="picture">
+                    <img src="https://i.pinimg.com/236x/8e/d1/89/8ed18906322879330afe8c27ad8aed6c.jpg" alt="Image 1" height="300">
+                    <p class="description"><i>   Rs 4,500</i></p> 
+                    <button onclick="addToCart('hybrid', '4500')">Add to cart</button>
+                </div>
+                <div class="picture">
+                    <img src="https://i.pinimg.com/236x/7a/0f/06/7a0f060ddd07dd3bc2c3a35a19333eb4.jpg" alt="Image 6"  height="300">
+                    <p class="description"><i>  RS 5,000</i></p>
+                    <button onclick="addToCart('hybrid', '5000')">Add to cart</button>
+                </div>
+                <div class="picture">
+                    <img src="https://i.pinimg.com/236x/c3/02/b6/c302b63182f5f79b381a28d0fb46d6e3.jpg" alt="Image 7" height="300">
+                    <p class="description"><I> RS 4,000</I></p>
+                    <button onclick="addToCart('hybrid', '4000')">Add to cart</button>
+                </div>
+                <div class="picture">
+                    <img src="https://i.pinimg.com/236x/17/6b/2d/176b2dcd3cbb99c58e6520a9a46e6b00.jpg" alt="Image 8" height="300">
+                    <p class="description"><i> RS 4,500</i></p>
+                    <button onclick="addToCart('Angelina', '4500')">Add to cart</button>
+
+<!-- Add similar changes to other buttons -->
+
+                </div>
+            </div> 
+            <br>
+<hr class="custom-hr">
+<BR><BR>
+    <p><i><u>"WE CAN CUSTOMIZE FLOWRS, BOQUETS FOR DIFFERET EVENTS PLACE YOUR ORDER 5 DAYS BEFORE YOUR EVENT"</u></i></p><br><br><br><br>
+    <div class="cart" id="mycart"><h1>My CART</h1></div>
+    <div class="cart" id="mybill"><h1>MY BILL</h1></div>
+    <centre> <button onclick="print()">confirm order</button>
+    </centre>
+<script>
+    function print(){
+        alert(" your order is confirmed the rider will contact you within 30 mins");
+    }
+let cart = []; // Initialize an empty cart
+
+function addToCart(itemName, price) {
+  // Create an object to represent the item
+  const item = {
+    name: itemName,
+    price: parseFloat(price.replace(/\D/g, '')), // Extract numeric value from the price string
+  };
+
+  // Push the item to the cart
+  cart.push(item);
+
+  // Update the cart display
+  displayCart();
+
+  // Update the bill display
+  displayBill();
+}
+
+function calculateBill() {
+  let total = 0;
+  for (const item of cart) {
+    total += item.price;
+  }
+  return total;
+}
+
+function displayCart() {
+  const cartDiv = document.getElementById('mycart');
+  if (cart.length === 0) {
+    cartDiv.innerHTML = 'Cart is empty';
+  } else {
+    let cartItems = '<ul>'; // Using an unordered list to display cart items
+    for (const item of cart) {
+      cartItems += `<li>${item.name} - RS ${item.price}</li>`;
+    }
+    cartItems += '</ul>';
+    cartDiv.innerHTML = cartItems;
+  }
+}
+
+function displayBill() {
+  const billDiv = document.getElementById('mybill');
+  const totalBill = calculateBill();
+  billDiv.innerHTML = `<p>Total Bill: RS ${totalBill.toFixed(2)}</p>`;
+}
+
+  
+     </script>       
+   
+</body>
+</html>
